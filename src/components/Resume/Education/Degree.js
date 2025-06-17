@@ -8,6 +8,7 @@ const Degree = ({ data }) => (
       <p className="school">
         <a href={data.link}>{data.school}</a>, {data.year}
       </p>
+      <p className="grade">Grade: {data.grade}</p>
     </header>
   </article>
 );
@@ -18,6 +19,7 @@ Degree.propTypes = {
     link: PropTypes.string.isRequired,
     school: PropTypes.string.isRequired,
     year: PropTypes.number.isRequired,
+    grade: PropTypes.string.isRequired,
   }).isRequired,
 };
 
