@@ -21,14 +21,12 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
+
       <p>
-        Hi, I&apos;m Rutvik. I am a{' '}
-        <a href="https://www.tu-chemnitz.de/">TU Chemnitz</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hi, I&apos;m Rutvik. I am a graduate of TU Chemnitz and
+        a full-stack developer with 3+ years of experience.
+        Currently, I&apos;m working at PurpleLeafStrategy, where I build Enavia —
+        a cloud-based SaaS platform transforming pharmaceutical brand planning.
       </p>
       <ul className="actions">
         <li>
