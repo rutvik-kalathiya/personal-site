@@ -1,7 +1,7 @@
 const skills = [
   {
     title: 'Javascript',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Languages', 'Javascript'],
   },
   {
@@ -11,17 +11,17 @@ const skills = [
   },
   {
     title: 'React',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Javascript'],
   },
   {
     title: 'Next.JS',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Javascript'],
   },
   {
     title: 'Redux',
-    competency: 3,
+    competency: 4,
     category: ['Web Development', 'Javascript'],
   },
   {
@@ -31,17 +31,17 @@ const skills = [
   },
   {
     title: 'Node.JS',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Javascript'],
   },
   {
     title: 'Express.JS',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Javascript'],
   },
   {
     title: 'MongoDB',
-    competency: 4,
+    competency: 5,
     category: ['Web Development', 'Databases'],
   },
   {
@@ -76,7 +76,7 @@ const skills = [
   },
   {
     title: 'AWS',
-    competency: 3,
+    competency: 4,
     category: ['Tools', 'Web Development'],
   },
   {
@@ -96,7 +96,7 @@ const skills = [
   },
   {
     title: 'Playwright',
-    competency: 3,
+    competency: 5,
     category: ['Tools', 'Testing'],
   },
   {
@@ -108,6 +108,96 @@ const skills = [
     title: 'Jira',
     competency: 3,
     category: ['Tools'],
+  },
+  {
+    title: 'Java',
+    competency: 3,
+    category: ['Languages'],
+  },
+  {
+    title: 'Puppeteer',
+    competency: 3,
+    category: ['Tools', 'Testing'],
+  },
+  {
+    title: 'Selenium',
+    competency: 2,
+    category: ['Tools', 'Testing'],
+  },
+  {
+    title: 'Redis',
+    competency: 4,
+    category: ['Databases', 'Web Development'],
+  },
+  {
+    title: 'Postman',
+    competency: 5,
+    category: ['Tools', 'Web Development'],
+  },
+  {
+    title: 'Heroku',
+    competency: 5,
+    category: ['Tools', 'Web Development'],
+  },
+  {
+    title: 'Bootstrap',
+    competency: 4,
+    category: ['Web Development', 'Languages'],
+  },
+  {
+    title: 'PHP',
+    competency: 4,
+    category: ['Languages', 'Web Development'],
+  },
+  {
+    title: 'Stripe',
+    competency: 4,
+    category: ['Tools', 'Web Development'],
+  },
+  {
+    title: 'Storybook',
+    competency: 4,
+    category: ['Tools', 'Web Development'],
+  },
+  {
+    title: 'jQuery',
+    competency: 3,
+    category: ['Web Development', 'Javascript', 'Languages'],
+  },
+  {
+    title: 'Material UI',
+    competency: 4,
+    category: ['Web Development', 'Javascript'],
+  },
+  {
+    title: 'React Native',
+    competency: 3,
+    category: ['Web Development', 'Javascript'],
+  },
+  {
+    title: 'Context API',
+    competency: 3,
+    category: ['Web Development', 'Javascript'],
+  },
+  {
+    title: 'Pandas',
+    competency: 3,
+    category: ['ML Engineering', 'Python'],
+  },
+  {
+    title: 'Scikit-Learn',
+    competency: 3,
+    category: ['ML Engineering', 'Python'],
+  },
+  {
+    title: 'Numpy',
+    competency: 3,
+    category: ['ML Engineering', 'Python'],
+  },
+  {
+    title: 'Matplotlib',
+    competency: 3,
+    category: ['ML Engineering', 'Python'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
