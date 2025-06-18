@@ -84,6 +84,13 @@ body {
     }
   }
 
+  .header-right {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    line-height: inherit;
+  }
+
   .main {
     height: inherit;
     line-height: inherit;
@@ -142,6 +149,10 @@ body {
     .links {
       display: none;
     }
+
+    .header-right {
+      margin-right: 1.5em;
+    }
   }
 
   @include breakpoint(small) {
@@ -150,6 +161,10 @@ body {
 
     h1 {
       padding: 0 0 0 1em;
+    }
+
+    .header-right {
+      margin-right: 1em;
     }
 
     .main {

@@ -69,15 +69,80 @@
   }
 }
 
+// Mobile hamburger menu language toggle
+.language-toggle-mobile {
+  border-top: dotted 1px rgba(160, 160, 160, 0.3) !important;
+  margin-top: 1.5em !important;
+  padding-top: 1.5em !important;
+  display: none; // Hidden by default on desktop
+  
+  .language-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language-toggle {
+    margin: 0;
+    gap: 0.8em;
+    height: 1.5em;
+    display: flex !important; // Ensure it's always visible inside mobile menu
+    
+    .lang-btn {
+      font-size: 0.7em;
+      color: _palette(fg-bold);
+      
+      &:hover {
+        color: _palette(accent);
+      }
+      
+      &.active {
+        color: _palette(accent);
+      }
+    }
+    
+    .separator {
+      font-size: 0.7em;
+      color: _palette(border);
+    }
+  }
+}
+
 // Responsive behavior
 @include breakpoint(medium) {
-  .language-toggle {
-    display: none;
+  // Hide ONLY the header language toggle on mobile
+  .header-right > .language-toggle {
+    display: none !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header .header-right {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  
+  // Show language toggle in mobile menu
+  .language-toggle-mobile {
+    display: block !important;
   }
 }
 
 @include breakpoint(small) {
-  .language-toggle {
-    display: none;
+  // Hide ONLY the header language toggle on mobile
+  .header-right > .language-toggle {
+    display: none !important;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #header .header-right {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  
+  // Show language toggle in mobile menu
+  .language-toggle-mobile {
+    display: block !important;
   }
 } 

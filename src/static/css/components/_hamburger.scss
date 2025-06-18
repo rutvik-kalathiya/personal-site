@@ -38,3 +38,27 @@
     border-top: none;
   }
 }
+
+// Hide mobile language toggle by default (desktop)
+.language-toggle-mobile {
+  display: none;
+}
+
+.hamburger-container {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+// Mobile responsive styles
+@include breakpoint(medium) {
+  .hamburger-container {
+    display: flex;
+  }
+}
+
+@include breakpoint(small) {
+  .hamburger-container {
+    display: flex;
+  }
+}
