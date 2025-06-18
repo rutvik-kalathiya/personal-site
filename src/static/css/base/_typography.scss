@@ -182,3 +182,13 @@ hr {
 .align-right {
   text-align: right;
 }
+
+.highlight-text {
+  color: #6e9ecf;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #4a7ba7;
+  }
+}
