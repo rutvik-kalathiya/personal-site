@@ -47,7 +47,7 @@ const About = () => {
               <li key={index}><Markdown>{skill}</Markdown></li>
             ))}
           </ul>
-          <p>{t('pages.about.content.skillsFooter')}</p>
+          <p><Markdown>{t('pages.about.content.skillsFooter')}</Markdown></p>
           <h1>{t('pages.about.content.backgroundTitle')}</h1>
           <p><Markdown>{t('pages.about.content.background')}</Markdown></p>
           <h1>{t('pages.about.content.interestsTitle')}</h1>

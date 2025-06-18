@@ -36,7 +36,7 @@ const Index = () => {
         </p>
         <p>
           {t('pages.index.sourceAvailable')}{' '}
-          <a href="https://github.com/rutvik-kalathiya/personal-site">{t('pages.index.here')}</a>.
+          <a href="https://github.com/rutvik-kalathiya/personal-site" target="_blank" rel="noopener noreferrer">{t('pages.index.here')}</a>.
         </p>
       </article>
     </Main>

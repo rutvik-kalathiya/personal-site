@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -52,6 +52,22 @@ const Resume = () => {
     },
   ];
 
+  // Handle anchor scrolling when page loads
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      // Remove the # from the hash
+      const elementId = hash.substring(1);
+      // Wait a bit for the page to render, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <Main
       title={t('pages.resume.title')}
@@ -66,7 +82,7 @@ const Resume = () => {
             <div className="link-container">
               {sectionConfig.map((section) => (
                 <h4 key={section.key}>
-                  <a href={`#${section.name.toLowerCase()}`}>{section.name}</a>
+                  <a href={`#${section.key}`}>{section.name}</a>
                 </h4>
               ))}
             </div>
@@ -76,13 +92,13 @@ const Resume = () => {
           const { component: Component, data } = section;
           if (section.key === 'skills') {
             return (
-              <div key={section.key}>
+              <div key={section.key} id={section.key}>
                 <Component skills={skills} categories={categories} title={section.name} />
               </div>
             );
           }
           return (
-            <div key={section.key}>
+            <div key={section.key} id={section.key}>
               {data ? (
                 <Component data={data} title={section.name} />
               ) : (
