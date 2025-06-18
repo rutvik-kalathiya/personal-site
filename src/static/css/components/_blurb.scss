@@ -10,6 +10,10 @@
   h2 {
     font-size: 0.8em;
     margin: 0 0 (_size(element-margin) * 0.75) 0;
+    color: #2c3e50;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   h3 {
@@ -18,5 +22,64 @@
 
   p {
     font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+    
+    &:last-of-type {
+      margin-bottom: 1.5em;
+    }
+    
+    // Style for emphasized text
+    strong {
+      color: #3498db;
+      font-weight: 600;
+    }
+    
+    em {
+      color: #e74c3c;
+      font-style: normal;
+      font-weight: 500;
+    }
   }
+
+  // Add subtle animation for emojis
+  p:first-child {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(45deg, #3498db, #2ecc71);
+      border-radius: 2px;
+      opacity: 0.8;
+    }
+  }
+
+  // Enhance the actions section
+  // .actions {
+  //   margin-top: 2em;
+    
+  //   .button {
+  //     background: linear-gradient(45deg, #3498db, #2ecc71);
+  //     border: none;
+  //     color: white;
+  //     padding: 0.8em 1.5em;
+  //     border-radius: 25px;
+  //     font-weight: 500;
+  //     text-decoration: none;
+  //     display: inline-block;
+  //     transition: all 0.3s ease;
+  //     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+      
+  //     &:hover {
+  //       transform: translateY(-2px);
+  //       box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  //       color: white;
+  //     }
+  //   }
+  // }
 }
