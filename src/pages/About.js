@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Markdown from 'markdown-to-jsx';
 
 import Main from '../layouts/Main';
 
 const About = () => {
+  const { t } = useTranslation();
   const [markdown, setMarkdown] = useState('');
 
   useEffect(() => {
@@ -21,14 +23,14 @@ const About = () => {
     .filter((s) => s.length).length;
 
   return (
-    <Main title="About" description="Learn about Rutvik Kalathiya">
+    <Main title={t('pages.about.title')} description={t('pages.about.description')}>
       <article className="post markdown" id="about">
         <header>
           <div className="title">
             <h2>
-              <Link to="/about">About Me</Link>
+              <Link to="/about">{t('pages.about.title')}</Link>
             </h2>
-            <p>(in about {count} words)</p>
+            <p>{t('pages.about.wordCount', { count })}</p>
           </div>
         </header>
         <Markdown>{markdown}</Markdown>

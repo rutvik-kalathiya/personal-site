@@ -1,12 +1,26 @@
 import React, { Suspense, lazy, useState } from 'react';
-
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import routes from '../../data/routes';
 
 const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
 
 const Hamburger = () => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
+
+  // Create a mapping of route paths to translation keys
+  const getTranslatedLabel = (path, originalLabel) => {
+    const translationMap = {
+      '/about': t('nav.about'),
+      '/resume': t('nav.resume'),
+      '/projects': t('nav.projects'),
+      '/stats': t('nav.stats'),
+      '/contact': t('nav.contact'),
+    };
+
+    return translationMap[path] || originalLabel;
+  };
 
   return (
     <div className="hamburger-container">
@@ -33,7 +47,9 @@ const Hamburger = () => {
             {routes.map((l) => (
               <li key={l.label}>
                 <Link to={l.path} onClick={() => setOpen(!open)}>
-                  <h3 className={l.index && 'index-li'}>{l.label}</h3>
+                  <h3 className={l.index && 'index-li'}>
+                    {l.index ? l.label : getTranslatedLabel(l.path, l.label)}
+                  </h3>
                 </Link>
               </li>
             ))}

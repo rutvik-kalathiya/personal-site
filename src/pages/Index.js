@@ -1,42 +1,46 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import Main from '../layouts/Main';
 
-const Index = () => (
-  <Main
-    description={
-      "Rutvik Kalathiya's personal website. Chemnitz based TU Chemnitz graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
-    }
-  >
-    <article className="post" id="index">
-      <header>
-        <div className="title">
-          <h2>
-            <Link to="/">About this site</Link>
-          </h2>
-          <p>
-            A beautiful, responsive, statically-generated, react application
-            written with modern Javascript.
-          </p>
-        </div>
-      </header>
-      <p>
-        {' '}
-        Welcome to my website. Please feel free to read more{' '}
-        <Link to="/about">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">projects</Link>,{' '}
-        view <Link to="/stats">site statistics</Link>, or{' '}
-        <Link to="/contact">contact</Link> me.
-      </p>
-      <p>
-        {' '}
-        Source available{' '}
-        <a href="https://github.com/rutvik-kalathiya/personal-site">here</a>.
-      </p>
-    </article>
-  </Main>
-);
+const Index = () => {
+  const { t } = useTranslation();
+
+  return (
+    <Main
+      description={
+        "Rutvik Kalathiya's personal website. Chemnitz based TU Chemnitz graduate, "
+        + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      }
+    >
+      <article className="post" id="index">
+        <header>
+          <div className="title">
+            <h2>
+              <Link to="/">{t('pages.index.title')}</Link>
+            </h2>
+            <p>
+              {t('pages.index.description')}
+            </p>
+          </div>
+        </header>
+        <p>
+          {t('pages.index.welcome')}{' '}
+          <Link to="/about">{t('pages.index.aboutMe')}</Link>
+          {t('pages.index.checkOut')}{' '}
+          <Link to="/resume">{t('nav.resume')}</Link>, <Link to="/projects">{t('nav.projects')}</Link>,{' '}
+          {t('pages.index.view')} <Link to="/stats">{t('pages.index.siteStats')}</Link>
+          {t('pages.index.orContact')}{' '}
+          <Link to="/contact">{t('pages.index.contactMe')}</Link> {t('pages.index.me')}.
+        </p>
+        <p>
+          {t('pages.index.sourceAvailable')}{' '}
+          <a href="https://github.com/rutvik-kalathiya/personal-site">{t('pages.index.here')}</a>.
+        </p>
+      </article>
+    </Main>
+  );
+};
 
 export default Index;
