@@ -1,0 +1,83 @@
+// Language Toggle Component Styles
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-right: 1em;
+  
+  .lang-btn {
+    background: none;
+    border: none;
+    color: _palette(fg-light);
+    font-family: _font(family-heading);
+    font-size: 0.7em;
+    font-weight: _font(weight-heading);
+    letter-spacing: _font(kerning-heading);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: color 0.2s ease;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    
+    &:hover {
+      color: _palette(fg-bold);
+    }
+    
+    &.active {
+      color: _palette(accent);
+      font-weight: _font(weight-heading-bold);
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      background: none;
+    }
+    
+    &:active {
+      background: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      transform: none;
+    }
+    
+    &:focus-visible {
+      outline: none;
+      background: none;
+    }
+  }
+  
+  .separator {
+    color: _palette(border);
+    font-size: 0.7em;
+    user-select: none;
+    margin: 0 0.2em;
+  }
+}
+
+// Header layout adjustments
+#header {
+  .header-right {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    line-height: inherit;
+  }
+}
+
+// Responsive behavior
+@include breakpoint(medium) {
+  .language-toggle {
+    display: none;
+  }
+}
+
+@include breakpoint(small) {
+  .language-toggle {
+    display: none;
+  }
+} 
