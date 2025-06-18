@@ -33,12 +33,15 @@ const SideBar = () => {
           a cloud-based SaaS platform transforming pharmaceutical brand planning.
         </p> */}
         <p>
+          {/* eslint-disable-next-line react/no-danger */}
           <span dangerouslySetInnerHTML={{ __html: t('sidebar.greeting') }} />
         </p>
         <p>
+          {/* eslint-disable-next-line react/no-danger */}
           <span dangerouslySetInnerHTML={{ __html: t('sidebar.currently') }} />
         </p>
         <p>
+          {/* eslint-disable-next-line react/no-danger */}
           <span dangerouslySetInnerHTML={{ __html: t('sidebar.passion') }} />
         </p>
         <ul className="actions">
