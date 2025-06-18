@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import Job from './Experience/Job';
 
-const Experience = ({ data }) => (
+const Experience = ({ data, title }) => (
   <div className="experience">
     <div className="link-to" id="experience" />
     <div className="title">
-      <h3>Experience</h3>
+      <h3>{title}</h3>
     </div>
     {data.map((job) => (
       <Job data={job} key={`${job.name}-${job.position}`} />
@@ -27,10 +27,12 @@ Experience.propTypes = {
       summary: PropTypes.string,
     }),
   ),
+  title: PropTypes.string,
 };
 
 Experience.defaultProps = {
   data: [],
+  title: 'Experience',
 };
 
 export default Experience;

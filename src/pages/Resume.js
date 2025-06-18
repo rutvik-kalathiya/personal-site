@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import Main from '../layouts/Main';
 
@@ -9,45 +10,90 @@ import Skills from '../components/Resume/Skills';
 import Courses from '../components/Resume/Courses';
 import References from '../components/Resume/References';
 
-import courses from '../data/resume/courses';
-import degrees from '../data/resume/degrees';
-import work from '../data/resume/work';
 import { skills, categories } from '../data/resume/skills';
 
-// NOTE: sections are displayed in order defined.
-const sections = {
-  Education: () => <Education data={degrees} />,
-  Experience: () => <Experience data={work} />,
-  Skills: () => <Skills skills={skills} categories={categories} />,
-  Courses: () => <Courses data={courses} />,
-  References: () => <References />,
-};
+const Resume = () => {
+  const { t } = useTranslation();
 
-const Resume = () => (
-  <Main
-    title="Resume"
-    description="Rutvik Kalathiya's Resume. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
-  >
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2>
-            <Link to="resume">Resume</Link>
-          </h2>
-          <div className="link-container">
-            {Object.keys(sections).map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
+  // Get resume data from translations
+  const resumeData = t('resumeData', { returnObjects: true });
+
+  // Section configuration with translated names
+  const sectionConfig = [
+    {
+      key: 'education',
+      name: t('pages.resume.sections.education'),
+      component: Education,
+      data: resumeData.degrees,
+    },
+    {
+      key: 'experience',
+      name: t('pages.resume.sections.experience'),
+      component: Experience,
+      data: resumeData.work,
+    },
+    {
+      key: 'skills',
+      name: t('pages.resume.sections.skills'),
+      component: Skills,
+      data: { skills, categories },
+    },
+    {
+      key: 'courses',
+      name: t('pages.resume.sections.courses'),
+      component: Courses,
+      data: resumeData.courses,
+    },
+    {
+      key: 'references',
+      name: t('pages.resume.sections.references'),
+      component: References,
+      data: null,
+    },
+  ];
+
+  return (
+    <Main
+      title={t('pages.resume.title')}
+      description={t('pages.resume.description')}
+    >
+      <article className="post" id="resume">
+        <header>
+          <div className="title">
+            <h2>
+              <Link to="resume">{t('pages.resume.title')}</Link>
+            </h2>
+            <div className="link-container">
+              {sectionConfig.map((section) => (
+                <h4 key={section.key}>
+                  <a href={`#${section.name.toLowerCase()}`}>{section.name}</a>
+                </h4>
+              ))}
+            </div>
           </div>
-        </div>
-      </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
-      ))}
-    </article>
-  </Main>
-);
+        </header>
+        {sectionConfig.map((section) => {
+          const { component: Component, data } = section;
+          if (section.key === 'skills') {
+            return (
+              <div key={section.key}>
+                <Component skills={skills} categories={categories} title={section.name} />
+              </div>
+            );
+          }
+          return (
+            <div key={section.key}>
+              {data ? (
+                <Component data={data} title={section.name} />
+              ) : (
+                <Component title={section.name} />
+              )}
+            </div>
+          );
+        })}
+      </article>
+    </Main>
+  );
+};
 
 export default Resume;

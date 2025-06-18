@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
-const Skills = ({ skills, categories }) => {
+const Skills = ({ skills, categories, title }) => {
   const initialButtons = Object.fromEntries(
-    [['All', false]].concat(categories.map(({ name }) => [name, false])),
+    [['All', true]].concat(categories.map(({ name }) => [name, false])),
   );
 
   const [buttons, setButtons] = useState(initialButtons);
@@ -64,7 +64,7 @@ const Skills = ({ skills, categories }) => {
     <div className="skills">
       <div className="link-to" id="skills" />
       <div className="title">
-        <h3>Skills</h3>
+        <h3>{title}</h3>
         {/* <p>
           Note: I think these sections are silly, but everyone seems to have
           one. Here is a *mostly* honest overview of my skills.
@@ -90,11 +90,13 @@ Skills.propTypes = {
       color: PropTypes.string,
     }),
   ),
+  title: PropTypes.string,
 };
 
 Skills.defaultProps = {
   skills: [],
   categories: [],
+  title: 'Skills',
 };
 
 export default Skills;
