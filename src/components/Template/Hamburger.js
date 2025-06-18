@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import routes from '../../data/routes';
+import LanguageToggle from './LanguageToggle';
 
 const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
 
@@ -53,6 +54,11 @@ const Hamburger = () => {
                 </Link>
               </li>
             ))}
+            <li className="language-toggle-mobile">
+              <div className="language-toggle-container">
+                <LanguageToggle />
+              </div>
+            </li>
           </ul>
         </Menu>
       </Suspense>
