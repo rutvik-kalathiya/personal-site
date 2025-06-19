@@ -25,7 +25,7 @@ const Certifications = ({ data, title }) => (
   <div className="certifications">
     <div className="link-to" id="certifications" />
     <div className="title">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
     </div>
     <div className="certification-list">{getRows(data)}</div>
   </div>

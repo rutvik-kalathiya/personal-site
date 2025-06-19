@@ -7,7 +7,7 @@ const References = ({ title }) => (
     <div className="link-to" id="references" />
     <div className="title">
       <Link to="/contact">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       </Link>
     </div>
   </div>
