@@ -18,23 +18,23 @@ const Age = () => {
   return <>{age}</>;
 };
 
-const data = [
+const getPersonalData = (t) => [
   {
     key: 'age',
-    label: 'Current age',
+    label: t('pages.stats.labels.currentAge'),
     value: <Age />,
   },
   {
     key: 'countries',
-    label: 'Countries visited',
+    label: t('pages.stats.labels.countriesVisited'),
     value: 6,
     link: 'https://www.google.com/maps/d/u/0/edit?mid=1dhhB7Af4olxhA-vA71t3HafBKNB2lAA&usp=sharing',
   },
   {
     key: 'location',
-    label: 'Current city',
+    label: t('pages.stats.labels.currentCity'),
     value: 'Chemnitz, Germany',
   },
 ];
 
-export default data;
+export default getPersonalData;

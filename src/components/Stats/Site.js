@@ -1,10 +1,14 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Table from './Table';
-import initialData from '../../data/stats/site';
+import getSiteData from '../../data/stats/site';
 
 const Stats = () => {
+  const { t } = useTranslation();
+  const initialData = getSiteData(t);
   const [data, setResponseData] = useState(initialData);
+
   // TODO think about persisting this somewhere
   const fetchData = useCallback(async () => {
     // request must be authenticated if private
@@ -21,7 +25,7 @@ const Stats = () => {
           : field.value,
       })),
     );
-  }, []);
+  }, [initialData]);
 
   useEffect(() => {
     fetchData();
@@ -29,7 +33,7 @@ const Stats = () => {
 
   return (
     <div>
-      <h3>Some stats about this site</h3>
+      <h3>{t('pages.stats.siteTitle')}</h3>
       <Table data={data} />
     </div>
   );

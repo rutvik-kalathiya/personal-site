@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
  * mostly jokes. To see everything returned by the github api, run:
  curl https://api.github.com/repos/mldangelo/personal-site
  */
-const data = [
+const getSiteData = (t) => [
   // {
   //   label: 'Stars this repository has on github',
   //   key: 'stargazers_count',
@@ -34,7 +34,7 @@ const data = [
   //   link: 'https://github.com/rutvik-kalathiya/personal-site/issues',
   // },
   {
-    label: 'Last updated at',
+    label: t('pages.stats.labels.lastUpdatedAt'),
     key: 'pushed_at',
     link: 'https://github.com/rutvik-kalathiya/personal-site/commits',
     format: (x) => dayjs(x).format('MMMM DD, YYYY'),
@@ -43,10 +43,10 @@ const data = [
     // TODO update this with a pre-commit hook
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
-    label: 'Lines of Javascript powering this website',
+    label: t('pages.stats.labels.linesOfJavascript'),
     value: '2150',
     link: 'https://github.com/rutvik-kalathiya/personal-site/graphs/contributors',
   },
 ];
 
-export default data;
+export default getSiteData;

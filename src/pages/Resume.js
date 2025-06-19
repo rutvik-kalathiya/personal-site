@@ -7,6 +7,7 @@ import Main from '../layouts/Main';
 import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
+import Projects from '../components/Resume/Projects';
 import Certifications from '../components/Resume/Certifications';
 // import References from '../components/Resume/References';
 // import Courses from '../components/Resume/Courses';
@@ -39,6 +40,12 @@ const Resume = () => {
       name: t('pages.resume.sections.skills'),
       component: Skills,
       data: { skills, categories },
+    },
+    {
+      key: 'projects',
+      name: t('pages.resume.sections.projects'),
+      component: Projects,
+      data: resumeData.projects,
     },
     {
       key: 'certifications',
@@ -78,7 +85,7 @@ const Resume = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100);
+      }, 300);
     }
   }, []);
 
@@ -130,13 +137,13 @@ const Resume = () => {
           const { component: Component, data } = section;
           if (section.key === 'skills') {
             return (
-              <div key={section.key} id={section.key}>
+              <div key={section.key}>
                 <Component skills={skills} categories={categories} title={section.name} />
               </div>
             );
           }
           return (
-            <div key={section.key} id={section.key}>
+            <div key={section.key}>
               {data ? (
                 <Component data={data} title={section.name} />
               ) : (

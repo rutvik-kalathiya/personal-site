@@ -1,12 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Table from './Table';
-import data from '../../data/stats/personal';
+import getPersonalData from '../../data/stats/personal';
 
-const PersonalStats = () => (
-  <>
-    <h3>Some stats about me</h3>
-    <Table data={data} />
-  </>
-);
+const PersonalStats = () => {
+  const { t } = useTranslation();
+  const data = getPersonalData(t);
+
+  return (
+    <>
+      <h3>{t('pages.stats.personalTitle')}</h3>
+      <Table data={data} />
+    </>
+  );
+};
 
 export default PersonalStats;

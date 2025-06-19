@@ -12,36 +12,31 @@ const projectsData = {
         + 'expected return projections, and interactive investment breakdown charts to help users plan their financial future.',
     },
     {
-      title: 'Visaman Sales Global',
-      subtitle: '2015 BVP Hackathon',
-      image: '/images/projects/visamansales.png',
-      date: '2015-11-20',
+      title: 'GameHub',
+      subtitle: 'A game recommendation system',
+      image: '/images/projects/gamehub.png',
+      date: '2023-07-15',
       desc:
-        'Built for a social impact hackathon. '
-        + 'NearestDollar connected to your bank accounts, credit cards, '
-        + 'or debit cards and rounded up your purchases to donate the balance to '
-        + 'the charity of your choice.',
+        'A comprehensive game recommendation platform featuring a modern dark-themed interface. '
+        + 'Displays popular games across various genres including action, adventure, RPG, and strategy titles. '
+        + 'Built to help gamers discover new titles with intuitive navigation and game categorization.',
     },
     {
-      title: 'Harvest',
-      subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
+      title: 'Visaman Sales Global',
+      subtitle: '',
+      link: 'https://visamanglobalsales.com/',
+      image: '/images/projects/visamansales.png',
+      date: '2019-12-01',
+      desc: 'Redesigned and developed a full-scale website with an admin panel for Visaman Sales, an import-export business. Built with user-friendly architecture ensuring scalability and ease of use. Streamlined the design and functionality to enhance overall user experience and operational efficiency.',
+    },
+    {
+      title: 'Kala Manjari',
+      subtitle: '',
       link: 'https://devpost.com/software/harvest',
       image: '/images/projects/kala-manjari.png',
-      date: '2015-09-20',
+      date: '2019-05-01',
       desc:
-        'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-        + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-        + 'and nutrient deficiencies at an affordable price for the developing world.',
-    },
-    {
-      title: 'Cat Detector',
-      subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-      image: '/images/projects/gamehub.png',
-      date: '2015-05-15',
-      desc:
-        'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-        + 'Over 60,000 cats were classified before server bills made the project too expensive '
-        + 'to continue hosting.',
+        'Designed and developed a dynamic website for Kalamanjari, a cultural event at GMIU. Built using HTML, CSS, JavaScript, PHP, and MySQL to create an interactive platform with seamless navigation. Enhanced the event\'s digital presence and user engagement through thoughtful design and functionality.',
     },
   ],
   de: [
@@ -57,36 +52,36 @@ const projectsData = {
         + 'erwartete Renditeprognosen und interaktive Investitionsaufschlüsselungsdiagramme, die Benutzern bei der Planung ihrer finanziellen Zukunft helfen.',
     },
     {
-      title: 'Visaman Sales Global',
-      subtitle: '2015 BVP Hackathon',
-      image: '/images/projects/visamansales.png',
-      date: '2015-11-20',
+      title: 'GameHub',
+      subtitle: 'Ein Spieleempfehlungssystem',
+      image: '/images/projects/gamehub.png',
+      date: '2023-07-15',
       desc:
-        'Für einen Social-Impact-Hackathon entwickelt. '
-        + 'NearestDollar war mit Ihren Bankkonten, Kreditkarten '
-        + 'oder Debitkarten verbunden und rundete Ihre Einkäufe auf, um den Restbetrag '
-        + 'an die Wohltätigkeitsorganisation Ihrer Wahl zu spenden.',
+        'Eine umfassende Spieleempfehlungsplattform mit einer modernen, dunklen Benutzeroberfläche. '
+        + 'Zeigt beliebte Spiele verschiedener Genres wie Action, Adventure, RPG und Strategie an. '
+        + 'Entwickelt, um Gamern bei der Entdeckung neuer Titel mit intuitiver Navigation und Spielkategorisierung zu helfen.',
     },
     {
-      title: 'Harvest',
-      subtitle: 'Gewann den 3. Platz beim 2015 Techcrunch Disrupt SF Hackathon',
+      title: 'Visaman Sales Global',
+      subtitle: '',
+      link: 'https://visamanglobalsales.com/',
+      image: '/images/projects/visamansales.png',
+      date: '2019-12-01',
+      desc:
+        'Redesignte und entwickelte eine vollständige Website mit Admin-Panel für Visaman Sales, ein Import-Export-Unternehmen. '
+        + 'Gebaut mit benutzerfreundlicher Architektur, die Skalierbarkeit und Benutzerfreundlichkeit gewährleistet. '
+        + 'Optimierte das Design und die Funktionalität, um die allgemeine Benutzererfahrung und betriebliche Effizienz zu verbessern.',
+    },
+    {
+      title: 'Kala Manjari',
+      subtitle: '',
       link: 'https://devpost.com/software/harvest',
       image: '/images/projects/kala-manjari.png',
-      date: '2015-09-20',
+      date: '2019-05-01',
       desc:
-        'Gewann ~ 7000 $ an Preisen für eine fortschrittliche, kostengünstige Überwachungslösung '
-        + 'für Nutzpflanzen. Harvest wurde entwickelt, um Bewässerungslecks, Überwässerung '
-        + 'und Nährstoffmängel zu einem erschwinglichen Preis für Entwicklungsländer zu erkennen.',
-    },
-    {
-      title: 'Cat Detector',
-      subtitle: 'Ein Faltungsneuronenetzwerk zur Klassifizierung von Katzen! (und Hunden)',
-      image: '/images/projects/gamehub.png',
-      date: '2015-05-15',
-      desc:
-        'Trainierte ein Faltungsneuronenetzwerk zur Klassifizierung zwischen ~ 80 Katzenrassen. '
-        + 'Über 60.000 Katzen wurden klassifiziert, bevor die Serverkosten das Projekt zu teuer '
-        + 'für die weitere Bereitstellung machten.',
+        'Entwarf und entwickelte eine dynamische Website für Kalamanjari, eine kulturelle Veranstaltung an der GMIU. '
+        + 'Gebaut mit HTML, CSS, JavaScript, PHP und MySQL, um eine interaktive Plattform mit nahtloser Navigation zu schaffen. '
+        + 'Verbesserte die digitale Präsenz der Veranstaltung und das Benutzerengagement durch durchdachtes Design und Funktionalität.',
     },
   ],
 };

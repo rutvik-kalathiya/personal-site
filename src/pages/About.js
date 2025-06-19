@@ -48,8 +48,9 @@ const About = () => {
             ))}
           </ul>
           <p><Markdown>{t('pages.about.content.skillsFooter')}</Markdown></p>
-          <h1>{t('pages.about.content.backgroundTitle')}</h1>
-          <p><Markdown>{t('pages.about.content.background')}</Markdown></p>
+          {/* Hide background for now */}
+          {/* <h1>{t('pages.about.content.backgroundTitle')}</h1> */}
+          {/* <p><Markdown>{t('pages.about.content.background')}</Markdown></p> */}
           <h1>{t('pages.about.content.interestsTitle')}</h1>
           <p>{t('pages.about.content.interests')}</p>
           <ul>
