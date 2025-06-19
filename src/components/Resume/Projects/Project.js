@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Certification = ({ data }) => (
-  <div className="certification-item">
-    <div className="certification-header">
-      <div className="certification-title-section">
-        <h4 className="certification-title">{data.title}</h4>
-        <div className="certification-issuer">{data.issuer}
+const Project = ({ data }) => (
+  <div className="project-item">
+    <div className="project-header">
+      <div className="project-title-section">
+        <h4 className="project-title">{data.title}</h4>
+        <div className="project-issuer">{data.issuer}
           <span>
             {data.link && (
-              <span className="certification-credential">
+              <span className="project-credential">
                 <a href={data.link} target="_blank" rel="noopener noreferrer" className="credential-link">
                   Show certificate
                 </a>
@@ -18,15 +18,15 @@ const Certification = ({ data }) => (
           </span>
         </div>
       </div>
-      <div className="certification-date">{data.issueDate}</div>
+      <div className="project-date">{data.issueDate}</div>
     </div>
 
     {data.description && (
       // eslint-disable-next-line react/no-danger
-      <div className="certification-description" dangerouslySetInnerHTML={{ __html: data.description }} />
+      <div className="project-description" dangerouslySetInnerHTML={{ __html: data.description }} />
     )}
     {data.skills && data.skills.length > 0 && (
-      <div className="certification-skills">
+      <div className="project-skills">
         <span className="skills-label">Skills: </span>
         <span className="skills-list">{data.skills.join(' · ')}</span>
       </div>
@@ -34,7 +34,7 @@ const Certification = ({ data }) => (
   </div>
 );
 
-Certification.propTypes = {
+Project.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     issuer: PropTypes.string.isRequired,
@@ -46,4 +46,4 @@ Certification.propTypes = {
   }).isRequired,
 };
 
-export default Certification;
+export default Project;

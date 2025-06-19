@@ -6,7 +6,7 @@ const about = {
     content: {
       greeting: "Hi there! 👋 I'm Rutvik, a passionate full-stack developer and <a href='https://www.tu-chemnitz.de' target='_blank' rel='noopener noreferrer'>TU Chemnitz</a> graduate with 3+ years of professional experience building scalable web applications and innovative SaaS platforms.",
       currentlyTitle: 'Currently',
-      currently: "I'm currently working as a Software Engineer at <a href='https://www.purpleleafstrategy.com' target='_blank' rel='noopener noreferrer'>PurpleLeafStrategy</a>, where I'm developing <a href='https://www.enavia.io' target='_blank' rel='noopener noreferrer'>Enavia</a> — a cutting-edge cloud-based SaaS platform that's transforming how pharmaceutical companies approach brand planning and analytics. It's exciting to work on technology that directly impacts healthcare and pharmaceutical innovation.",
+      currently: "I'm currently working as a Software Engineer at <a href='https://www.purpleleafstrategy.com' target='_blank' rel='noopener noreferrer'>PurpleLeafStrategy</a>, where I'm developing <a href='https://www.enavia.io' target='_blank' rel='noopener noreferrer'>Enavia</a> — a cutting-edge cloud-based SaaS platform that's transforming how pharmaceutical companies approach brand planning and analytics. It's exciting to work on technology that directly impacts healthcare and pharmaceutical innovation. For more details about my professional journey and experience, check out my <a href='/resume#experience'><span class='highlight-text'>work experience section</span></a>.",
       whatIDoTitle: 'What I Do',
       whatIDo: 'I specialize in:',
       skills: [
@@ -42,7 +42,7 @@ const about = {
     content: {
       greeting: 'Hallo! 👋 Ich bin Rutvik, ein leidenschaftlicher Full-Stack-Entwickler und <a href="https://www.tu-chemnitz.de" target="_blank" rel="noopener noreferrer">TU Chemnitz</a>-Absolvent mit über 3 Jahren Berufserfahrung im Aufbau skalierbarer Webanwendungen und innovativer SaaS-Plattformen.',
       currentlyTitle: 'Aktuell',
-      currently: 'Ich arbeite derzeit als Software Engineer bei <a href="https://www.purpleleafstrategy.com" target="_blank" rel="noopener noreferrer">PurpleLeafStrategy</a>, wo ich <a href="https://www.enavia.io" target="_blank" rel="noopener noreferrer">Enavia</a> entwickle — eine hochmoderne cloud-basierte SaaS-Plattform, die die Art und Weise revolutioniert, wie Pharmaunternehmen Markenplanung und Analytics angehen. Es ist aufregend, an Technologien zu arbeiten, die direkte Auswirkungen auf das Gesundheitswesen und die pharmazeutische Innovation haben.',
+      currently: 'Ich arbeite derzeit als Software Engineer bei <a href="https://www.purpleleafstrategy.com" target="_blank" rel="noopener noreferrer">PurpleLeafStrategy</a>, wo ich <a href="https://www.enavia.io" target="_blank" rel="noopener noreferrer">Enavia</a> entwickle — eine hochmoderne cloud-basierte SaaS-Plattform, die die Art und Weise revolutioniert, wie Pharmaunternehmen Markenplanung und Analytics angehen. Es ist aufregend, an Technologien zu arbeiten, die direkte Auswirkungen auf das Gesundheitswesen und die pharmazeutische Innovation haben. Für weitere Details zu meiner beruflichen Reise und Erfahrung, schauen Sie sich meinen <a href="/resume#experience"><span class="highlight-text">Erfahrungsabschnitt</span></a> an.',
       whatIDoTitle: 'Was ich mache',
       whatIDo: 'Ich spezialisiere mich auf:',
       skills: [
