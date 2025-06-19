@@ -9,9 +9,11 @@ const Education = ({ data, title }) => (
     <div className="title">
       <h3>{title}</h3>
     </div>
-    {data.map((degree) => (
-      <Degree data={degree} key={degree.school} />
-    ))}
+    <div className="degree-main-container">
+      {data.map((degree) => (
+        <Degree data={degree} key={degree.school} />
+      ))}
+    </div>
   </div>
 );
 

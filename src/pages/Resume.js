@@ -7,8 +7,10 @@ import Main from '../layouts/Main';
 import Education from '../components/Resume/Education';
 import Experience from '../components/Resume/Experience';
 import Skills from '../components/Resume/Skills';
-import Courses from '../components/Resume/Courses';
-import References from '../components/Resume/References';
+import Certifications from '../components/Resume/Certifications';
+// import References from '../components/Resume/References';
+// import Courses from '../components/Resume/Courses';
+// import References from '../components/Resume/References';
 
 import { skills, categories } from '../data/resume/skills';
 
@@ -39,17 +41,29 @@ const Resume = () => {
       data: { skills, categories },
     },
     {
-      key: 'courses',
-      name: t('pages.resume.sections.courses'),
-      component: Courses,
-      data: resumeData.courses,
+      key: 'certifications',
+      name: t('pages.resume.sections.certifications'),
+      component: Certifications,
+      data: resumeData.certifications,
     },
-    {
-      key: 'references',
-      name: t('pages.resume.sections.references'),
-      component: References,
-      data: null,
-    },
+    // {
+    //   key: 'references',
+    //   name: t('pages.resume.sections.references'),
+    //   component: References,
+    //   data: null,
+    // },
+    // {
+    //   key: 'courses',
+    //   name: t('pages.resume.sections.courses'),
+    //   component: Courses,
+    //   data: resumeData.courses,
+    // },
+    // {
+    //   key: 'references',
+    //   name: t('pages.resume.sections.references'),
+    //   component: References,
+    //   data: null,
+    // },
   ];
 
   // Handle anchor scrolling when page loads
@@ -76,9 +90,33 @@ const Resume = () => {
       <article className="post" id="resume">
         <header>
           <div className="title">
-            <h2>
-              <Link to="resume">{t('pages.resume.title')}</Link>
-            </h2>
+            <div className="title-with-downloads">
+              <h2>
+                <Link to="resume">{t('pages.resume.title')}</Link>
+              </h2>
+              <div className="resume-download-section">
+                <div className="resume-download-links">
+                  <a
+                    href="/images/resume/Rutvik-Kalathiya-English.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume-download-link"
+                    title="Download English Resume PDF"
+                  >
+                    📄 EN
+                  </a>
+                  <a
+                    href="/images/resume/Rutvik-Kalathiya-German.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume-download-link"
+                    title="Download German Resume PDF"
+                  >
+                    📄 DE
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="link-container">
               {sectionConfig.map((section) => (
                 <h4 key={section.key}>
