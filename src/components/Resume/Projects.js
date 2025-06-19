@@ -25,7 +25,7 @@ const Projects = ({ data, title }) => (
   <div className="projects">
     <div className="link-to" id="projects" />
     <div className="title">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
     </div>
     <div className="project-list">{getRows(data)}</div>
   </div>

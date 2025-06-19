@@ -23,7 +23,7 @@ const Achievements = ({ data, title }) => (
   <div className="achievements">
     <div className="link-to" id="achievements" />
     <div className="title">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
     </div>
     <ul className="achievement-list">{getRows(data)}</ul>
   </div>

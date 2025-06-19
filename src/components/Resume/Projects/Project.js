@@ -5,7 +5,7 @@ const Project = ({ data }) => (
   <div className="project-item">
     <div className="project-header">
       <div className="project-title-section">
-        <h4 className="project-title">{data.title}</h4>
+        <h1 className="project-title">{data.title}</h1>
         <div className="project-issuer">{data.issuer}
           <span>
             {data.link && (
