@@ -70,8 +70,11 @@ const Skills = ({ skills, categories, title }) => {
           one. Here is a *mostly* honest overview of my skills.
         </p> */}
       </div>
-      <div className="skill-button-container">{getButtons()}</div>
-      <div className="skill-row-container">{getRows()}</div>
+      <div className="skills-card">
+        <div className="skill-button-container">{getButtons()}</div>
+        <div className="skills-divider" />
+        <div className="skill-row-container">{getRows()}</div>
+      </div>
     </div>
   );
 };

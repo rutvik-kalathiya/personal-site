@@ -57,6 +57,8 @@ const Experience = ({ data, title }) => {
               </div>
             </div>
 
+            <div className="company-divider" />
+
             <div className="roles-container">
               {company.roles.map((role) => (
                 <Job key={`${role.name}-${role.position}-${role.startDate}`} data={role} />
