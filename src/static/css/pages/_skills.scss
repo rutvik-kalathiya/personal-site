@@ -2,11 +2,41 @@
 
 .skills .title {
   text-align: center;
+  h2 {
+    margin-bottom: 2em;
+  }
+}
+
+.skills-card {
+  padding: 1.5em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
 }
 
 .skill-button-container {
-  margin: 1.5em 0;
+  margin: 0 0 1em 0;
   text-align: center;
+}
+
+.skills-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1em 0;
+}
+
+.skill-row-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.5em;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .skillbutton {
@@ -59,7 +89,7 @@
 
 .skillbar-title span {
   display: block;
-  background: rgba(0, 0, 0, 0.1);
+  // background: rgba(0, 0, 0, 0.1);
   padding: 0 20px;
   height: 35px;
   line-height: 35px;
