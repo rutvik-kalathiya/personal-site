@@ -2,15 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Degree = ({ data }) => (
-  <article className="degree-container">
-    <header>
-      <h4 className="degree">{data.degree}</h4>
-      <p className="school">
-        <a href={data.link}>{data.school}</a>, {data.year}
-      </p>
-      <p className="grade">Grade: {data.grade}</p>
-    </header>
-  </article>
+  <div className="degree-item">
+    <div className="degree-header">
+      <div className="degree-title-section">
+        <h1 className="degree-title">{data.degree}</h1>
+        <div className="degree-school">
+          <a href={data.link} target="_blank" rel="noopener noreferrer">{data.school}</a>
+        </div>
+      </div>
+      <div className="degree-date">{data.year}</div>
+    </div>
+
+    <div className="degree-details">
+      <span className="grade-label">GRADE: </span>
+      <span className="grade-value">{data.grade}</span>
+    </div>
+  </div>
 );
 
 Degree.propTypes = {
