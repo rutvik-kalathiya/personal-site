@@ -5,50 +5,53 @@ import Markdown from 'markdown-to-jsx';
 
 const Job = ({
   data: {
-    name, position, url, startDate, endDate, summary, highlights,
+    position, startDate, endDate, summary, highlights,
   },
 }) => (
-  <article className="jobs-container">
-    <header>
-      <h4>
-        <a href={url}>{name}</a> - {position}
-      </h4>
-      <p className="daterange">
-        {' '}
+  <div className="job-item">
+    <div className="job-header">
+      <div className="job-title-section">
+        <h2 className="job-title">{position}</h2>
+      </div>
+      <div className="job-date">
         {dayjs(startDate).format('MMMM YYYY')} -{' '}
         {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
-      </p>
-    </header>
-    {summary ? (
-      <Markdown
-        options={{
-          overrides: {
-            p: {
-              props: {
-                className: 'summary',
+      </div>
+    </div>
+
+    {summary && (
+      <div className="job-summary">
+        <Markdown
+          options={{
+            overrides: {
+              p: {
+                props: {
+                  className: 'summary-text',
+                },
               },
             },
-          },
-        }}
-      >
-        {summary}
-      </Markdown>
-    ) : null}
-    {highlights ? (
-      <ul className="points">
-        {highlights.map((highlight) => (
-          <li key={highlight}>{highlight}</li>
-        ))}
-      </ul>
-    ) : null}
-  </article>
+          }}
+        >
+          {summary}
+        </Markdown>
+      </div>
+    )}
+
+    {highlights && highlights.length > 0 && (
+      <div className="job-highlights">
+        <ul className="highlights-list">
+          {highlights.map((highlight) => (
+            <li key={highlight} className="highlight-item">{highlight}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
 );
 
 Job.propTypes = {
   data: PropTypes.shape({
-    name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string,
     summary: PropTypes.string,
