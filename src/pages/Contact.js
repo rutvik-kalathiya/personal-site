@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Main from '../layouts/Main';
-import EmailLink from '../components/Contact/EmailLink';
+// import EmailLink from '../components/Contact/EmailLink';
 import ContactIcons from '../components/Contact/ContactIcons';
+import ContactForm from '../components/Contact/ContactForm';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -22,11 +23,15 @@ const Contact = () => {
             </h2>
           </div>
         </header>
-        <div className="email-at">
+        <ContactForm />
+        <div className="contact-separator">
+          {/* <p>{t('pages.contact.connectSocial')}</p> */}
+          <ContactIcons />
+        </div>
+        {/* <div className="email-at">
           <p>{t('pages.contact.feelFree')} </p>
           <EmailLink />
-        </div>
-        <ContactIcons />
+        </div> */}
       </article>
     </Main>
   );
