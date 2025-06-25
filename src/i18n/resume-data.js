@@ -29,7 +29,7 @@ const resumeData = {
       },
       {
         name: 'PurpleLeafStrategy GmbH',
-        position: 'Intern',
+        position: 'Software Developer (Intern)',
         url: 'https://enavia.io',
         startDate: '2022-09-01',
         endDate: '2023-02-01',
@@ -292,7 +292,7 @@ const resumeData = {
       },
       {
         name: 'PurpleLeafStrategy GmbH',
-        position: 'Praktikant',
+        position: 'Software Developer (Praktikant)',
         url: 'https://enavia.io',
         startDate: '2022-09-01',
         endDate: '2023-02-01',
