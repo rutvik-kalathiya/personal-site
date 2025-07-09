@@ -104,7 +104,7 @@ const Resume = () => {
               <div className="resume-download-section">
                 <div className="resume-download-links">
                   <a
-                    href="/images/resume/Rutvik-Kalathiya-English.pdf"
+                    href="/images/resume/Rutvik-Kalathiya-CV-English.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-download-link"
@@ -113,7 +113,7 @@ const Resume = () => {
                     📄 EN
                   </a>
                   <a
-                    href="/images/resume/Rutvik-Kalathiya-German.pdf"
+                    href="/images/resume/Rutvik-Kalathiya-CV-German.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-download-link"
