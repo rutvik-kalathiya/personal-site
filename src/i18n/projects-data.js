@@ -14,7 +14,8 @@ const projectsData = {
     {
       title: 'GameHub',
       subtitle: 'A game recommendation system',
-      image: '/images/projects/gamehub.png',
+      link: 'https://rutvik-gamehub.netlify.app/',
+      image: '/images/projects/gamehub.jpg',
       date: '2023-07-15',
       desc:
         'A comprehensive game recommendation platform featuring a modern dark-themed interface. '
@@ -32,7 +33,7 @@ const projectsData = {
     {
       title: 'Kala Manjari',
       subtitle: '',
-      link: 'https://devpost.com/software/harvest',
+      link: 'https://kala-manjari2k19.netlify.app/',
       image: '/images/projects/kala-manjari.png',
       date: '2019-05-01',
       desc:
@@ -54,7 +55,8 @@ const projectsData = {
     {
       title: 'GameHub',
       subtitle: 'Ein Spieleempfehlungssystem',
-      image: '/images/projects/gamehub.png',
+      link: 'https://rutvik-gamehub.netlify.app/',
+      image: '/images/projects/gamehub.jpg',
       date: '2023-07-15',
       desc:
         'Eine umfassende Spieleempfehlungsplattform mit einer modernen, dunklen Benutzeroberfläche. '
@@ -75,7 +77,7 @@ const projectsData = {
     {
       title: 'Kala Manjari',
       subtitle: '',
-      link: 'https://devpost.com/software/harvest',
+      link: 'https://kala-manjari2k19.netlify.app/',
       image: '/images/projects/kala-manjari.png',
       date: '2019-05-01',
       desc:
