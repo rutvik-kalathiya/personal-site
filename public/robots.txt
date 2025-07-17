@@ -1,2 +1,11 @@
 User-agent: *
-Disallow: /api
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /static/
+
+# Sitemap location
+Sitemap: https://rutvikkalathiya.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
