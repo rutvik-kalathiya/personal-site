@@ -33,7 +33,7 @@ const getPersonalData = (t) => [
   {
     key: 'location',
     label: t('pages.stats.labels.currentCity'),
-    value: 'Chemnitz, Germany',
+    value: 'Darmstadt, Germany',
   },
 ];
 

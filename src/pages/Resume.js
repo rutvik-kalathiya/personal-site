@@ -101,7 +101,7 @@ const Resume = () => {
               <h2>
                 <Link to="resume">{t('pages.resume.title')}</Link>
               </h2>
-              <div className="resume-download-section">
+              {/* <div className="resume-download-section">
                 <div className="resume-download-links">
                   <a
                     href="/images/resume/Rutvik-Kalathiya-CV-English.pdf"
@@ -122,7 +122,7 @@ const Resume = () => {
                     📄 DE
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="link-container">
               {sectionConfig.map((section) => (
