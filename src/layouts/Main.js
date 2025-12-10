@@ -9,8 +9,8 @@ import ScrollToTop from '../components/Template/ScrollToTop';
 
 const Main = (props) => {
   // SEO-optimized default values
-  const defaultDescription = 'Rutvik Kalathiya - Full Stack Developer & Software Engineer with 3+ years experience. TU Chemnitz graduate specializing in React, Node.js, and cloud-based SaaS platforms. Currently developing innovative pharmaceutical software at PurpleLeafStrategy.';
-  const defaultKeywords = 'Rutvik Kalathiya, Software Developer, Software Engineer, Full Stack Developer, React Developer, Node.js Developer, TU Chemnitz, PurpleLeafStrategy, Enavia, Web Development, SaaS Platform, Pharmaceutical Software, JavaScript Developer, TypeScript, AWS, Frontend Developer, Backend Developer';
+  const defaultDescription = 'Rutvik Kalathiya - Senior Software Engineer & Full Stack Developer with 3+ years experience. TU Chemnitz graduate specializing in React, Next.js, Node.js, and cloud-based SaaS platforms. Currently leading development of NetzPortal at prp project:people for the energy sector using modern web technologies.';
+  const defaultKeywords = 'Rutvik Kalathiya, Software Developer, Software Engineer, Senior Software Engineer, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, TU Chemnitz, prp project:people, NetzPortal, Energy Sector, Web Development, SaaS Platform, JavaScript Developer, TypeScript, AWS, Frontend Developer, Backend Developer';
 
   const siteUrl = 'https://rutvikkalathiya.com';
   const pageUrl = `${siteUrl}${props.currentPath || ''}`;
@@ -31,7 +31,7 @@ const Main = (props) => {
     ],
     worksFor: {
       '@type': 'Organization',
-      name: 'PurpleLeafStrategy GmbH',
+      name: 'prp project:people GmbH',
     },
     alumniOf: {
       '@type': 'EducationalOrganization',

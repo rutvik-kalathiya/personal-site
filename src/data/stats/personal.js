@@ -27,13 +27,13 @@ const getPersonalData = (t) => [
   {
     key: 'countries',
     label: t('pages.stats.labels.countriesVisited'),
-    value: 6,
+    value: 7,
     link: 'https://www.google.com/maps/d/u/0/edit?mid=1dhhB7Af4olxhA-vA71t3HafBKNB2lAA&usp=sharing',
   },
   {
     key: 'location',
     label: t('pages.stats.labels.currentCity'),
-    value: 'Darmstadt, Germany',
+    value: 'Würzburg, Germany',
   },
 ];
 

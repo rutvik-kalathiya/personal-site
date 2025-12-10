@@ -2,10 +2,24 @@ const resumeData = {
   en: {
     work: [
       {
+        name: 'prp project:people GmbH',
+        position: 'Senior Software Engineer',
+        url: 'https://pr-p.net',
+        startDate: '2025-10-01',
+        summary: 'prp project:people develops NetzPortal, a comprehensive tool for the energy sector. While the company also has SAP-based products, I am transforming and creating a new solution using modern technologies like React and Next.js.',
+        highlights: [
+          'Leading development of NetzPortal features and infrastructure for the energy sector.',
+          'Building modern React and Next.js solutions for utility companies and their network processes.',
+          'Working on NetzPortal applications used by construction service providers, installers, and network connection customers.',
+          'Transforming traditional processes with cutting-edge web technologies and modern development practices.',
+        ],
+      },
+      {
         name: 'PurpleLeafStrategy GmbH',
         position: 'Full Stack Developer',
         url: 'https://enavia.io',
         startDate: '2024-02-01',
+        endDate: '2025-09-30',
         summary: 'PurpleLeafStrategy builds Enavia, a B2B cloud-based SaaS platform for pharmaceutical brand planning and regulatory workflows.',
         highlights: [
           'Leading development of Enavia features and infrastructure, focused on performance and scalability.',
@@ -265,10 +279,24 @@ const resumeData = {
   de: {
     work: [
       {
+        name: 'prp project:people GmbH',
+        position: 'Senior Software Engineer',
+        url: 'https://pr-p.net',
+        startDate: '2025-10-01',
+        summary: 'prp project:people entwickelt NetzPortal, ein umfassendes Tool für den Energiesektor. Während das Unternehmen auch SAP-basierte Produkte hat, transformiere und erstelle ich eine neue Lösung mit modernen Technologien wie React und Next.js.',
+        highlights: [
+          'Führende Entwicklung von NetzPortal-Features und Infrastruktur für den Energiesektor.',
+          'Aufbau moderner React- und Next.js-Lösungen für Versorgungsunternehmen und deren Netzprozesse.',
+          'Arbeit an NetzPortal-Anwendungen, die von Baudienstleistern, Installateuren und Netzanschlusskunden genutzt werden.',
+          'Transformation traditioneller Prozesse mit modernsten Web-Technologien und zeitgemäßen Entwicklungspraktiken.',
+        ],
+      },
+      {
         name: 'PurpleLeafStrategy GmbH',
         position: 'Full Stack Entwickler',
         url: 'https://enavia.io',
         startDate: '2024-02-01',
+        endDate: '2025-09-30',
         summary: 'PurpleLeafStrategy entwickelt Enavia, eine B2B cloud-basierte SaaS-Plattform für pharmazeutische Markenplanung und regulatorische Workflows.',
         highlights: [
           'Führende Entwicklung von Enavia-Features und Infrastruktur mit Fokus auf Performance und Skalierbarkeit.',

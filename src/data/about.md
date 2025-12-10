@@ -4,7 +4,7 @@ Hi there! 👋 I'm Rutvik, a passionate full-stack developer and TU Chemnitz gra
 
 # Currently
 
-I'm currently working as a Software Engineer at **PurpleLeafStrategy**, where I'm developing **Enavia** — a cutting-edge cloud-based SaaS platform that's transforming how pharmaceutical companies approach brand planning and analytics. It's exciting to work on technology that directly impacts healthcare and pharmaceutical innovation.
+I'm currently working as a Senior Software Engineer at **prp project:people**, where I'm leading development of **NetzPortal** — a comprehensive tool for the energy sector built with modern React and Next.js technologies. While the company also has SAP-based products, I am transforming and creating a new solution using cutting-edge web technologies. It's exciting to work on technology that directly impacts the energy and utility industry.
 
 # What I Do
 
