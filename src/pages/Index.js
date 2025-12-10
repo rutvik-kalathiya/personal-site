@@ -9,14 +9,16 @@ const Index = () => {
 
   return (
     <Main
-      description={
-        "Rutvik Kalathiya's personal website. Chemnitz based TU Chemnitz graduate, "
-        + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
-      }
+      title="Rutvik Kalathiya - Full Stack Developer & Software Engineer"
+      description="Rutvik Kalathiya - Senior Software Engineer & Full Stack Developer with 3+ years experience. TU Chemnitz graduate specializing in React, Next.js, Node.js, and cloud-based SaaS platforms. Currently leading development of NetzPortal at prp project:people for the energy sector."
+      keywords="Rutvik Kalathiya, Software Developer, Software Engineer, Full Stack Developer, React Developer, Next.js Developer, Node.js Developer, TU Chemnitz, prp project:people, NetzPortal, Energy Sector, Web Development, SaaS Platform, JavaScript Developer, TypeScript, AWS, Frontend Developer, Backend Developer, Chemnitz, Germany"
     >
       <article className="post" id="index">
         <header>
           <div className="title">
+            <h1>
+              <Link to="/">Rutvik Kalathiya</Link>
+            </h1>
             <h2>
               <Link to="/">{t('pages.index.title')}</Link>
             </h2>

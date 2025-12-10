@@ -16,37 +16,62 @@ const Main = (props) => {
   const pageUrl = `${siteUrl}${props.currentPath || ''}`;
   const imageUrl = `${siteUrl}/images/me.jpg`;
 
-  // Structured data for better SEO
+  // Enhanced structured data for better SEO
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Rutvik Kalathiya',
-    jobTitle: 'Full Stack Developer',
-    description: 'Software Engineer and Full Stack Developer with expertise in React, Node.js, and cloud technologies',
+    alternateName: 'Rutvik',
+    jobTitle: 'Senior Software Engineer',
+    description: 'Rutvik Kalathiya - Senior Software Engineer & Full Stack Developer with 3+ years experience. TU Chemnitz graduate specializing in React, Next.js, Node.js, and cloud-based SaaS platforms.',
     url: siteUrl,
     image: imageUrl,
+    email: 'rutvikkalathiya7@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Chemnitz',
+      addressRegion: 'Saxony',
+      addressCountry: 'DE',
+    },
     sameAs: [
       'https://github.com/rutvik-kalathiya',
       'https://linkedin.com/in/rutvik-kalathiya',
+      'https://www.xing.com/profile/Rutvik_Kalathiya',
     ],
     worksFor: {
       '@type': 'Organization',
       name: 'prp project:people GmbH',
+      url: 'https://pr-p.net',
     },
     alumniOf: {
       '@type': 'EducationalOrganization',
       name: 'Technical University of Chemnitz',
+      url: 'https://www.tu-chemnitz.de',
     },
     knowsAbout: [
       'Software Development',
       'Full Stack Development',
       'React',
+      'Next.js',
       'Node.js',
       'JavaScript',
       'TypeScript',
       'Cloud Computing',
+      'AWS',
+      'Azure',
       'SaaS Platforms',
+      'Web Development',
+      'Frontend Development',
+      'Backend Development',
     ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'degree',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Technical University of Chemnitz',
+      },
+    },
   };
 
   return (

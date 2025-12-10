@@ -19,13 +19,14 @@ const resumeData = {
         position: 'Full Stack Developer',
         url: 'https://enavia.io',
         startDate: '2024-02-01',
-        endDate: '2025-09-30',
-        summary: 'PurpleLeafStrategy builds Enavia, a B2B cloud-based SaaS platform for pharmaceutical brand planning and regulatory workflows.',
+        endDate: '2025-08-31',
+        summary: 'PurpleLeafStrategy builds Enavia, a B2B cloud-based SaaS platform for pharmaceutical brand planning and regulatory workflows. (Full-time: Feb 2024 - Aug 2025; planned one-month break before next role.)',
         highlights: [
           'Leading development of Enavia features and infrastructure, focused on performance and scalability.',
           'Implemented secure authentication via Keycloak and improved CI/CD with GitHub Actions.',
           'Refactored legacy codebase to boost maintainability and developer onboarding.',
           'Integrated third-party APIs for real-time data visualization and regulatory updates.',
+          'Took a planned one-month break in September 2025 before joining prp project:people.',
         ],
       },
       {
@@ -296,13 +297,14 @@ const resumeData = {
         position: 'Full Stack Entwickler',
         url: 'https://enavia.io',
         startDate: '2024-02-01',
-        endDate: '2025-09-30',
-        summary: 'PurpleLeafStrategy entwickelt Enavia, eine B2B cloud-basierte SaaS-Plattform für pharmazeutische Markenplanung und regulatorische Workflows.',
+        endDate: '2025-08-31',
+        summary: 'PurpleLeafStrategy entwickelt Enavia, eine B2B cloud-basierte SaaS-Plattform für pharmazeutische Markenplanung und regulatorische Workflows. (Vollzeit: Feb 2024 - Aug 2025; geplanter einmonatiger Break vor dem nächsten Schritt.)',
         highlights: [
           'Führende Entwicklung von Enavia-Features und Infrastruktur mit Fokus auf Performance und Skalierbarkeit.',
           'Implementierung sicherer Authentifizierung über Keycloak und Verbesserung von CI/CD mit GitHub Actions.',
           'Refactoring des Legacy-Codes zur Verbesserung der Wartbarkeit und Entwickler-Onboarding.',
           'Integration von Drittanbieter-APIs für Echtzeit-Datenvisualisierung und regulatorische Updates.',
+          'Geplanter einmonatiger Break im September 2025 vor dem Wechsel zu prp project:people.',
         ],
       },
       {
