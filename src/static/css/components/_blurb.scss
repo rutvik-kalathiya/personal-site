@@ -10,7 +10,7 @@
   h2 {
     font-size: 0.8em;
     margin: 0 0 (_size(element-margin) * 0.75) 0;
-    color: #2c3e50;
+    color: var(--color-heading-dark);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -35,12 +35,12 @@
     
     // Style for emphasized text
     strong {
-      color: #3498db;
+      color: var(--color-link-blue);
       font-weight: 600;
     }
     
     em {
-      color: #e74c3c;
+      color: var(--color-link-red);
       font-style: normal;
       font-weight: 500;
     }
@@ -57,7 +57,7 @@
       top: 0;
       bottom: 0;
       width: 3px;
-      background: linear-gradient(45deg, #3498db, #2ecc71);
+      background: linear-gradient(45deg, var(--color-link-blue), var(--color-link-green));
       border-radius: 2px;
       opacity: 0.8;
     }

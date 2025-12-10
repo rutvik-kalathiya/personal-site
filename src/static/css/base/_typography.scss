@@ -184,11 +184,11 @@ hr {
 }
 
 .highlight-text {
-  color: #6e9ecf;
+  color: var(--color-code-blue);
   font-weight: 500;
   transition: color 0.2s ease;
   
   &:hover {
-    color: #4a7ba7;
+    color: var(--color-code-blue-dark);
   }
 }

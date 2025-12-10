@@ -23,6 +23,26 @@
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
 @function _palette($keys...) {
+  $key: nth($keys, 1);
+  
+  // Map SCSS palette keys to CSS variable names
+  $var-map: (
+    bg: var(--color-bg),
+    bg-alt: var(--color-bg-alt),
+    fg: var(--color-fg),
+    fg-bold: var(--color-fg-bold),
+    fg-light: var(--color-fg-light),
+    border: var(--color-border),
+    border-bg: var(--color-border-bg),
+    border-alt: var(--color-border-alt),
+    accent: var(--color-accent),
+  );
+  
+  @if map-has-key($var-map, $key) {
+    @return map-get($var-map, $key);
+  }
+  
+  // Fallback to original SCSS map if key not found
   @return val($palette, $keys...);
 }
 

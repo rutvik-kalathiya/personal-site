@@ -1,0 +1,68 @@
+// Theme Variables - CSS Custom Properties for Dark/Light Mode
+
+:root {
+  // Light theme (default)
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f4f4;
+  --color-fg: #646464;
+  --color-fg-bold: #3c3b3b;
+  --color-fg-light: #aaaaaa;
+  --color-border: rgba(160, 160, 160, 0.3);
+  --color-border-bg: rgba(160, 160, 160, 0.075);
+  --color-border-alt: rgba(160, 160, 160, 0.65);
+  --color-accent: #2e59ba;
+  
+  // Additional colors for components
+  --color-card-bg: #fafafa;
+  --color-card-border: #e0e0e0;
+  --color-text-muted: #666;
+  --color-text-dark: #333;
+  --color-text-light: #888;
+  --color-text-lighter: #444;
+  --color-link-blue: #3498db;
+  --color-link-red: #e74c3c;
+  --color-link-green: #2ecc71;
+  --color-skill-bg: #eee;
+  --color-skill-accent: #6adcfa;
+  --color-success: #28a745;
+  --color-error: #dc3545;
+  --color-heading-dark: #2c3e50;
+  --color-code-blue: #6e9ecf;
+  --color-code-blue-dark: #4a7ba7;
+  --color-overlay-bg: rgba(255, 255, 255, 0.9);
+  --color-accent-transparent: rgba(46, 89, 186, 0.05);
+}
+
+[data-theme="dark"] {
+  // Dark theme
+  --color-bg: #1a1a1a;
+  --color-bg-alt: #2d2d2d;
+  --color-fg: #b0b0b0;
+  --color-fg-bold: #e0e0e0;
+  --color-fg-light: #808080;
+  --color-border: rgba(160, 160, 160, 0.2);
+  --color-border-bg: rgba(160, 160, 160, 0.05);
+  --color-border-alt: rgba(160, 160, 160, 0.4);
+  --color-accent: #4a7bc8;
+  
+  // Additional colors for components (dark theme)
+  --color-card-bg: #2a2a2a;
+  --color-card-border: #404040;
+  --color-text-muted: #a0a0a0;
+  --color-text-dark: #d0d0d0;
+  --color-text-light: #b0b0b0;
+  --color-text-lighter: #c0c0c0;
+  --color-link-blue: #5dade2;
+  --color-link-red: #ec7063;
+  --color-link-green: #58d68d;
+  --color-skill-bg: #333;
+  --color-skill-accent: #7ae5ff;
+  --color-success: #58d68d;
+  --color-error: #ec7063;
+  --color-heading-dark: #e0e0e0;
+  --color-code-blue: #7bb3d9;
+  --color-code-blue-dark: #6ba3c9;
+  --color-overlay-bg: rgba(26, 26, 26, 0.95);
+  --color-accent-transparent: rgba(74, 123, 200, 0.1);
+}
+

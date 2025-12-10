@@ -25,10 +25,10 @@
       gap: 0.4em;
       
       .resume-download-link {
-        color: #666;
+        color: var(--color-text-muted);
         text-decoration: none;
         padding: 0.4em 0.6em;
-        border: 1px solid #ddd;
+        border: 1px solid var(--color-border);
         border-radius: 4px;
         font-weight: 500;
         transition: all 0.2s ease;
@@ -39,10 +39,10 @@
         gap: 0.2em;
         
         &:hover {
-          color: #333;
-          border-color: #999;
+          color: var(--color-text-dark);
+          border-color: var(--color-border-alt);
           text-decoration: none;
-          background-color: #f8f9fa;
+          background-color: var(--color-bg-alt);
         }
       }
     }
@@ -86,9 +86,9 @@
   .company-item {
     margin-bottom: 3em;
     padding: 1.5em;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-card-border);
     border-radius: 8px;
-    background-color: #fafafa;
+    background-color: var(--color-card-bg);
   }
 
   .company-header {
@@ -101,7 +101,7 @@
 
   .company-divider {
     height: 1px;
-    background-color: #e0e0e0;
+    background-color: var(--color-card-border);
     margin: 1em 0;
   }
 
@@ -113,7 +113,7 @@
     margin: 0;
     font-size: 0.9em;
     font-weight: bold;
-    color: #333;
+    color: var(--color-text-dark);
     
     a {
       color: inherit;
@@ -127,7 +127,7 @@
 
   .company-duration {
     font-size: 0.85em;
-    color: #888;
+    color: var(--color-text-light);
     white-space: nowrap;
     margin-left: 0.5em;
     font-weight: 500;
@@ -137,9 +137,9 @@
     .job-item {
       margin-bottom: 1.5em;
       padding: 1em;
-      border: 1px solid #ddd;
+      border: 1px solid var(--color-border);
       border-radius: 6px;
-      background-color: #fff;
+      background-color: var(--color-bg);
       
       &:last-child {
         margin-bottom: 0;
@@ -162,12 +162,12 @@
     margin: 0;
     font-size: 0.8em;
     font-weight: 600;
-    color: #444;
+    color: var(--color-text-lighter);
   }
 
   .job-date {
     font-size: 0.8em;
-    color: #666;
+    color: var(--color-text-muted);
     white-space: nowrap;
     margin-left: 1em;
     font-weight: 500;
@@ -179,7 +179,7 @@
     .summary-text {
       font-size: 0.9em;
       line-height: 1.5;
-      color: #555;
+      color: var(--color-fg);
       margin: 0;
     }
   }
@@ -193,7 +193,7 @@
         margin-bottom: 0.4em;
         font-size: 0.85em;
         line-height: 1.4;
-        color: #666;
+        color: var(--color-text-muted);
         
         &:last-child {
           margin-bottom: 0;
@@ -293,9 +293,9 @@
 .degree-item {
   margin-bottom: 2em;
   padding: 1.5em;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--color-card-bg);
 }
 
 .degree-header {
@@ -313,12 +313,12 @@
   margin: 0;
   font-size: 0.8em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .degree-school {
   font-size: 0.9em;
-  color: #666;
+  color: var(--color-text-muted);
   font-weight: 500;
   
   a {
@@ -333,14 +333,14 @@
 
 .degree-date {
   font-size: 0.85em;
-  color: #888;
+  color: var(--color-text-light);
   white-space: nowrap;
   margin-left: 1em;
 }
 
 .degree-details {
   font-size: 0.85em;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .grade-label {
@@ -428,9 +428,9 @@
 .certification-item {
   margin-bottom: 2em;
   padding: 1.5em;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--color-card-bg);
 }
 
 .certification-header {
@@ -448,18 +448,18 @@
   margin: 0;
   font-size: 0.8em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .certification-issuer {
   font-size: 0.9em;
-  color: #666;
+  color: var(--color-text-muted);
   font-weight: 500;
 }
 
 .certification-date {
   font-size: 0.85em;
-  color: #888;
+  color: var(--color-text-light);
   white-space: nowrap;
   margin-left: 1em;
 }
@@ -467,7 +467,7 @@
 .certification-credential {
   margin-bottom: 0.8em;
   font-size: 0.85em;
-  color: #555;
+  color: var(--color-fg);
 }
 
 .credential-link {
@@ -486,12 +486,12 @@
   margin-bottom: 1em;
   font-size: 0.9em;
   line-height: 1.5;
-  color: #444;
+  color: var(--color-text-lighter);
 }
 
 .certification-skills {
   font-size: 0.85em;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .skills-label {
@@ -505,9 +505,9 @@
 .project-item {
   margin-bottom: 2em;
   padding: 1.5em;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--color-card-bg);
 }
 
 .project-header {
@@ -525,18 +525,18 @@
   margin: 0;
   font-size: 0.8em;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .project-issuer {
   font-size: 0.9em;
-  color: #666;
+  color: var(--color-text-muted);
   font-weight: 500;
 }
 
 .project-date {
   font-size: 0.85em;
-  color: #888;
+  color: var(--color-text-light);
   white-space: nowrap;
   margin-left: 1em;
 }
@@ -544,17 +544,17 @@
 .project-credential {
   margin-bottom: 0.8em;
   font-size: 0.85em;
-  color: #555;
+  color: var(--color-fg);
 }
 
 .project-description {
   margin-bottom: 1em;
   font-size: 0.9em;
   line-height: 1.5;
-  color: #444;
+  color: var(--color-text-lighter);
 }
 
 .project-skills {
   font-size: 0.85em;
-  color: #666;
+  color: var(--color-text-muted);
 }

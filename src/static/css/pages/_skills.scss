@@ -9,9 +9,9 @@
 
 .skills-card {
   padding: 1.5em;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-card-border);
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: var(--color-card-bg);
 }
 
 .skill-button-container {
@@ -21,7 +21,7 @@
 
 .skills-divider {
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: var(--color-card-border);
   margin: 1em 0;
 }
 
@@ -54,7 +54,7 @@
   display: block;
   margin-bottom: 15px;
   width: 100%;
-  background: #eee;
+  background: var(--color-skill-bg);
   height: 35px;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -78,7 +78,7 @@
   font-weight: bold;
   font-size: 13px;
   color: #fff;
-  background: #6adcfa;
+  background: var(--color-skill-accent);
   -webkit-border-top-left-radius: 3px;
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-topleft: 3px;
@@ -104,7 +104,7 @@
 .skillbar-bar {
   height: 35px;
   width: 0px;
-  background: #6adcfa;
+  background: var(--color-skill-accent);
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -117,6 +117,6 @@
   font-size: 11px;
   height: 35px;
   line-height: 35px;
-  color: #444;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--color-text-lighter);
+  opacity: 0.6;
 }

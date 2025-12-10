@@ -1,6 +1,7 @@
 @import-normalize;
 
 @import "libs/vars";
+@import "libs/theme";
 @import "libs/functions";
 @import "libs/mixins";
 @import "libs/skel";
@@ -56,6 +57,7 @@
 @import "components/hamburger";
 @import "components/markdown";
 @import "components/language-toggle";
+@import "components/theme-toggle";
 
 // Layout.
 

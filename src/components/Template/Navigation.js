@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import Hamburger from './Hamburger';
 import LanguageToggle from './LanguageToggle';
+import ThemeToggle from './ThemeToggle';
 import routes from '../../data/routes';
 
 // Websites Navbar, displays routes defined in 'src/data/routes'
@@ -46,6 +47,7 @@ const Navigation = () => {
         </ul>
       </nav>
       <div className="header-right">
+        <ThemeToggle />
         <LanguageToggle />
         <Hamburger />
       </div>
