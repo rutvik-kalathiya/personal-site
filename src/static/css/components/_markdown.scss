@@ -3,6 +3,10 @@
 .markdown {
   p {
     margin: auto;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-align: justify;
+    text-align-last: left;
   }
 
   h1 {

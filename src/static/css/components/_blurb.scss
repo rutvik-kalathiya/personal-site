@@ -24,6 +24,10 @@
     font-size: 0.9em;
     line-height: 1.6;
     margin-bottom: 1.2em;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-align: justify;
+    text-align-last: left;
     
     &:last-of-type {
       margin-bottom: 1.5em;
